@@ -8,10 +8,10 @@ Shader "Unlit/Toon"
         _LightColor ("Light Color", Color) = (1, 1, 1, 1)
 
         [Header(Shadow)]
-        _ShadeMid ("Middle Shadow Color", Color) = (0.8, 0.8, 0.8, 1)
-        _ShadeDark ("Dark Shadow Color", Color) = (0.5, 0.5, 0.5, 1)
-        _Threshold1 ("Mid Threshold", Range(0, 1)) = 0.5
-        _Threshold2 ("Dark Threshold", Range(0, 1)) = 0.2
+        _ShadeMid ("Middle Shadow Color", Color) = (0.8, 0.8, 0.8, 1)   // 1影のカラー
+        _ShadeDark ("Dark Shadow Color", Color) = (0.5, 0.5, 0.5, 1)    // 2影のカラー
+        _Threshold1 ("Mid Threshold", Range(0, 1)) = 0.5                // 1影のしきい値
+        _Threshold2 ("Dark Threshold", Range(0, 1)) = 0.2               // 2影のしきい値
 
         [Header(Shadow Blur)]
         _ShadowBlur ("Shadow Blur", Range(0, 0.1)) = 0.05  // 影の境界のぼかし幅
@@ -21,31 +21,31 @@ Shader "Unlit/Toon"
         _SubsurfaceIntensity ("Subsurface Intensity", Range(0, 1)) = 0.1// 赤みの強さ
 
         [Header(Additional Light Settings)]
-        _AddLightIntensity ("Additional Light Intensity", Range(0, 5)) = 1
+        _AddLightIntensity ("Additional Light Intensity", Range(0, 5)) = 1  // 追加ライトの光の影響度
 
         _SpecularGloss ("Specular Gloss", Range(1, 256)) = 20       // ハイライトの鋭さ・光沢の強さ
 
         [Header(Highlight)]
-        _HighlightColor ("Highlight Color", Color) = (1, 1, 1, 1)
-        _HighlighThreshold ("HighlighThreshold", Range(0, 1)) = 0.7
-        _HighlighSmoothness ("highlight Smoothness", Range(0.01, 0.5)) = 0.1
+        _HighlightColor ("Highlight Color", Color) = (1, 1, 1, 1)       // ハイライトのカラー
+        _HighlighThreshold ("HighlighThreshold", Range(0, 1)) = 0.7     // ハイライトのしきい値
+        _HighlighSmoothness ("highlight Smoothness", Range(0.01, 0.5)) = 0.1    // ハイライトの滑らかさ
 
-        _FacelightIntensity ("Facelight Intensity", Range(0, 1)) = 0.5
+        _FacelightIntensity ("Facelight Intensity", Range(0, 1)) = 0.5  // 顔のライト
 
         [Header(Rimlight)]
-        _RimColor ("Rim Color", Color) = (1, 1, 1, 1)
-        _RimPower ("Rim Power", Range(1, 10)) = 4
-        _RimIntensity ("Rim Intensity", Range(0, 2)) = 1
+        _RimColor ("Rim Color", Color) = (1, 1, 1, 1)               // リムライトのカラー
+        _RimPower ("Rim Power", Range(1, 10)) = 4                   // リムライトの強さ
+        _RimIntensity ("Rim Intensity", Range(0, 2)) = 1            // リムライトの光の強度
 
         [Header(Outline)]
-        _OutlineColor ("Outline Color", Color) = (0, 0, 0, 1)
-        _OutlineWidth ("Outline Width", Range(0.0, 0.005)) = 0.003
+        _OutlineColor ("Outline Color", Color) = (0, 0, 0, 1)       // アウトラインのカラー
+        _OutlineWidth ("Outline Width", Range(0.0, 0.005)) = 0.003  // アウトラインの大きさ
 
         [Header(ShaderMode)]
         _ShaderMode ("Shader Mode", Float) = 0  // 0：Default、1：Face、2：Eye、3：Cloth
 
         [Header(AlphaCut)]
-        _AlphaCutoff ("Alpha Cutoff", Range(0, 1)) = 0.5
+        _AlphaCutoff ("Alpha Cutoff", Range(0, 1)) = 0.5    // VRoid特有の服などの余分な黒い部分を削除する
     }
     // サブシェーダー
     // シェーダーの主な処理はこの中に記述する
