@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [ExecuteInEditMode]     // エディタ上でも効果を確認できるようにするおまじない
-public class GrayscaleEffect : MonoBehaviour
+public class PostEffectTest : MonoBehaviour
 {
     public Material effectMaterial;
 

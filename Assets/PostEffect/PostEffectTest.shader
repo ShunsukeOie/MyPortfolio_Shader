@@ -1,4 +1,4 @@
-Shader "Unlit/GrayscaleEffect"
+Shader "Unlit/PostEffectTest"
 {
     Properties
     {
