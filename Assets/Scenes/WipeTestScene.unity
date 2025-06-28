@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 28894376}
   - component: {fileID: 28894375}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: WipeControler
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
