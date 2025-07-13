@@ -131,6 +131,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OriginalToon
       objectReference: {fileID: 0}
+    - target: {fileID: 2772829234138576144, guid: f8819ffe04e558b4990c90b045f24a95, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6721520460025531264, guid: f8819ffe04e558b4990c90b045f24a95, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
