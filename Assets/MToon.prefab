@@ -2418,7 +2418,7 @@ GameObject:
   - component: {fileID: 6284469604285315834}
   - component: {fileID: 1036978952003541774}
   m_Layer: 0
-  m_Name: "\u30A2\u30EA\u30A2"
+  m_Name: MToon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
